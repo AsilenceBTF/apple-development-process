@@ -35,6 +35,9 @@
 
 ## Part 2 SwiftUI
 
+### Animation
+#### Animation Example
+
 ## Part 3 CoreData
 
 ## Part 4 iCloudKit
