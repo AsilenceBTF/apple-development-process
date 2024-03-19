@@ -5,7 +5,9 @@
     - [Apple devices by iOS version worldwide](#apple-devices-by-ios-version-worldwide)
     - [Apple devices by MacOS version worldwide](#apple-devices-by-macos-version-worldwide)
   - [Part 1 Swift](#part-1-swift)
-  - [Part 2 SwiftUI](#part-2-swiftui)
+  - [Part 2.1 SwiftUI](#part-21-swiftui)
+    - [Animation](#animation)
+  - [Part 2.2 SwiftUI And Combine](#part-22-swiftui-and-combine)
   - [Part 3 CoreData](#part-3-coredata)
   - [Part 4 iCloudKit](#part-4-icloudkit)
   - [Part 5 Multi-Platform | MacOS And IOS](#part-5-multi-platform--macos-and-ios)
@@ -33,10 +35,11 @@
   
 ## Part 1 Swift
 
-## Part 2 SwiftUI
+## Part 2.1 SwiftUI
 
 ### Animation
-#### Animation Example
+
+## Part 2.2 SwiftUI And Combine
 
 ## Part 3 CoreData
 
