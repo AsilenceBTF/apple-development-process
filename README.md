@@ -37,6 +37,11 @@
 
 ## Part 2.1 SwiftUI
 
+**Some View** \
+Some View类型的入参或返回值，不仅需要遵守View协议，并且需要确定为同一类型，这一点由编译器保证。\
+例如一个返回值可能是 RounadRect 或 Rect 的函数就是不被允许的，虽然这两种类型都遵守View协议，但是函数最终的返回类型不是确定的。\
+这里注意一个特例就是 var body : some View，由于body是被 @ViewBuilder 修饰过的，所以他的返回值其实是确定的 Tupe\<View\> 
+
 ### Animation
 
 ## Part 2.2 SwiftUI And Combine
