@@ -5,6 +5,7 @@
     - [Apple devices by iOS version worldwide](#apple-devices-by-ios-version-worldwide)
     - [Apple devices by MacOS version worldwide](#apple-devices-by-macos-version-worldwide)
   - [Part 1 Swift](#part-1-swift)
+    - [@escaping](#escaping)
   - [Part 2.1 SwiftUI](#part-21-swiftui)
     - [Animation](#animation)
   - [Part 2.2 SwiftUI And Combine](#part-22-swiftui-and-combine)
@@ -34,6 +35,31 @@
 - MacOS 11: 1%
   
 ## Part 1 Swift
+
+### @escaping
+@escaping用来修饰入参的闭包，`当闭包的生命周期超过当前函数的生命周期时`，我们需要使用该关键字标识。 \
+以下情况会导致闭包的生命周期超过当前函数的生命周期：
+- 异步执行的闭包
+```swift
+func doAsySomething(completion: @escaping () -> ()) {
+    print("begin - doAsySomething")
+    DispatchQueue.main.async {
+        completion()
+    }
+    print("end - doAsySomething")
+}
+
+```
+- 无法确定何时执行
+```swift
+var completions: [()->()]!
+
+func doSomething(completion: @escaping () -> ()) {
+    completions.append(completion)
+}
+
+```
+
 
 ## Part 2.1 SwiftUI
 
