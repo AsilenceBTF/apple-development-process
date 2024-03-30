@@ -60,6 +60,8 @@ func doSomething(completion: @escaping () -> ()) {
 
 ```
 
+## Part 1.2 Swift Networking library: Alamofire
+
 
 ## Part 2.1 SwiftUI
 
@@ -69,6 +71,8 @@ Some View类型的入参或返回值，不仅需要遵守View协议，并且需�
 这里注意一个特例就是 var body : some View，由于body是被 @ViewBuilder 修饰过的，所以他的返回值其实是确定的 Tupe\<View\> 
 
 ### Animation
+
+
 
 ## Part 2.2 SwiftUI And Combine
 
