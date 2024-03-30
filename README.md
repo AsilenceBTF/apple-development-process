@@ -4,8 +4,10 @@
   - [Preresearch](#preresearch)
     - [Apple devices by iOS version worldwide](#apple-devices-by-ios-version-worldwide)
     - [Apple devices by MacOS version worldwide](#apple-devices-by-macos-version-worldwide)
-  - [Part 1 Swift](#part-1-swift)
+  - [Part 1.1 Swift](#part-11-swift)
     - [@escaping](#escaping)
+    - [对比 some、any、generic](#对比-someanygeneric)
+  - [Part 1.2 Swift Networking library: Alamofire](#part-12-swift-networking-library-alamofire)
   - [Part 2.1 SwiftUI](#part-21-swiftui)
     - [Animation](#animation)
   - [Part 2.2 SwiftUI And Combine](#part-22-swiftui-and-combine)
@@ -34,7 +36,7 @@
 - MacOS 12: 6%
 - MacOS 11: 1%
   
-## Part 1 Swift
+## Part 1.1 Swift
 
 ### @escaping
 @escaping用来修饰入参的闭包，`当闭包的生命周期超过当前函数的生命周期时`，我们需要使用该关键字标识。 \
@@ -60,6 +62,9 @@ func doSomething(completion: @escaping () -> ()) {
 
 ```
 
+### 对比 some、any、generic
+
+
 ## Part 1.2 Swift Networking library: Alamofire
 
 
@@ -71,6 +76,15 @@ Some View类型的入参或返回值，不仅需要遵守View协议，并且需�
 这里注意一个特例就是 var body : some View，由于body是被 @ViewBuilder 修饰过的，所以他的返回值其实是确定的 Tupe\<View\> 
 
 ### Animation
+swift的动画从大类可以分为显示动画和隐式动画，具体有以下几种场景触发动画
+- withAnimation()
+- .onAppear
+- .transition
+- .animation (隐式动画)
+
+在大多数场景下，使用除了.animation之外的显示动画是更优选择。
+
+**withAnimation**
 
 
 
