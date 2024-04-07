@@ -103,4 +103,8 @@ swift的动画从大类可以分为显示动画和隐式动画，具体有以下
 ## Others
 ### how to get deviceId
 https://stackoverflow.com/questions/19402327/how-to-get-unique-id-in-ios-device/32181411#32181411
+### get SIL or llvm-IR
+`swiftc -emit-sil main.swift` \
+`swiftc -emit-ir main.swift`
+
 
