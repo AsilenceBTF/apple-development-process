@@ -87,6 +87,9 @@ swift的动画从大类可以分为显示动画和隐式动画，具体有以下
 **withAnimation**
 
 
+### Transition 控制视图appear和disappear动画
+
+
 
 ## Part 2.2 SwiftUI And Combine
 
