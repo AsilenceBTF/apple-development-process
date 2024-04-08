@@ -9,7 +9,9 @@
     - [对比 some、any、generic](#对比-someanygeneric)
   - [Part 1.2 Swift Networking library: Alamofire](#part-12-swift-networking-library-alamofire)
   - [Part 2.1 SwiftUI](#part-21-swiftui)
+    - [App启动](#app启动)
     - [Animation](#animation)
+    - [Transition 控制视图appear和disappear动画](#transition-控制视图appear和disappear动画)
   - [Part 2.2 SwiftUI And Combine](#part-22-swiftui-and-combine)
   - [Part 3 CoreData](#part-3-coredata)
   - [Part 4 iCloudKit](#part-4-icloudkit)
@@ -18,6 +20,7 @@
   - [Part \* SwiftUI With UIKit Or AppKit](#part--swiftui-with-uikit-or-appkit)
   - [Others](#others)
     - [how to get deviceId](#how-to-get-deviceid)
+    - [get SIL or llvm-IR](#get-sil-or-llvm-ir)
 
 
 ## Preresearch
@@ -74,8 +77,11 @@ func doSomething(completion: @escaping () -> ()) {
 ```swift
 @main
 struct ExampleApp: App {
-  var body: some Scene {
-  }
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }   
+    }
 }
 ```
 - **@main** \
@@ -88,7 +94,7 @@ struct ExampleApp: App {
   有关some关键字的细节请阅读Part1
 - **Scene** \
   Scene
-  
+- **WindowGroup**
 
 **Some View** \
 Some View类型的入参或返回值，不仅需要遵守View协议，并且需要确定为同一类型，这一点由编译器保证。\
