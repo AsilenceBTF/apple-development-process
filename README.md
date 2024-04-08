@@ -70,6 +70,26 @@ func doSomething(completion: @escaping () -> ()) {
 
 ## Part 2.1 SwiftUI
 
+### App启动
+```swift
+@main
+struct ExampleApp: App {
+  var body: some Scene {
+  }
+}
+```
+- **@main** \
+  main标签修饰当前struct作为application的入口
+- **ExampleApp** \
+  ExampleApp遵守App协议，提供应用启动的视图
+- **var body: some Scene** \
+  App协议要求提供一个body属性，body本身遵守Scene协议
+- **some** \
+  有关some关键字的细节请阅读Part1
+- **Scene** \
+  Scene
+  
+
 **Some View** \
 Some View类型的入参或返回值，不仅需要遵守View协议，并且需要确定为同一类型，这一点由编译器保证。\
 例如一个返回值可能是 RounadRect 或 Rect 的函数就是不被允许的，虽然这两种类型都遵守View协议，但是函数最终的返回类型不是确定的。\
