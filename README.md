@@ -93,8 +93,10 @@ struct ExampleApp: App {
 - **some** \
   有关some关键字的细节请阅读Part1
 - **Scene** \
-  Scene
+  Scene是视图层次结构的容器，遵守Scene的body描述了当前展示给用户的视图结构。系统会根据当前app的状态来判断视图结构呈现的方式和时机。\
+  这在不同平台上呈现效果可能不一样，例如在iOS上屏幕一次只显示一个Scene，但是在MacOS上每个窗口都可能是一个Scene。
 - **WindowGroup**
+  WindowGroup用来管理窗口集合，一般应用在跨平台场景。
 
 **Some View** \
 Some View类型的入参或返回值，不仅需要遵守View协议，并且需要确定为同一类型，这一点由编译器保证。\
