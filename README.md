@@ -46,11 +46,11 @@
 先说结论: 在swift和swiftUI中优先使用struct.  
 
 **相同点:**  
-- properties 特性
+- properties 属性
 - methods 方法
 - subscripts 下标
 - initializers 初始化器
-- protocol conformances 协议一致性
+- protocol conformances 协议
 - extensions 扩展
 
 **不同点:**  
