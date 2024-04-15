@@ -44,7 +44,8 @@
 
 ### struct vs class
 先说结论: 在swift和swiftUI中优先使用struct.  
-swift中的struct和class一样，可以包含:
+
+**相同点:**  
 - properties 特性
 - methods 方法
 - subscripts 下标
