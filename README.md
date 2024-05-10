@@ -20,6 +20,7 @@
   - [Part 6 AppStore Verify](#part-6-appstore-verify)
   - [Part \* SwiftUI With UIKit Or AppKit](#part--swiftui-with-uikit-or-appkit)
   - [Others](#others)
+    - [video material](#video-material)  
     - [how to get deviceId](#how-to-get-deviceid)
     - [get SIL or llvm-IR](#get-sil-or-llvm-ir)
 
@@ -159,6 +160,11 @@ swift的动画从大类可以分为显示动画和隐式动画，具体有以下
 ## Part * SwiftUI With UIKit Or AppKit
 
 ## Others
+### video material
+
+[Introducing SwiftUI: Building Your First App](https://developer.apple.com/videos/play/wwdc2019/204)  
+[Building Custom Views with SwiftUI](https://developer.apple.com/videos/play/wwdc2019/237)
+
 ### how to get deviceId
 https://stackoverflow.com/questions/19402327/how-to-get-unique-id-in-ios-device/32181411#32181411
 ### get SIL or llvm-IR
